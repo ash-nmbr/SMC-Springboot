@@ -337,7 +337,7 @@ public class UserModelController {
       Email to = new Email("ashwin.nambiar47@gmail.com"); // use your own email address here
 
       String subject = "Sending with Twilio SendGrid is Fun";
-      Content content = new Content("text/html", "<h1><a href =\"http://127.0.0.1:8080/confirmuser/"+userid+"/\"> Click to confirm </a></h1>");
+      Content content = new Content("text/html", "<h1><a href =\"https://smc-springboot.herokuapp.com/confirmuser/"+userid+"/\"> Click to confirm </a></h1>");
 
       Mail mail = new Mail(from, subject, to, content);
 
